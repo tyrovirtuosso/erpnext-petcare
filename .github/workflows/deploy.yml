@@ -27,4 +27,15 @@ jobs:
           # Run migrations and restart
           cd ~/frappe-bench
           bench --site ${{ github.ref_name == 'main' && 'erp.masterpet.co.in' || 'dev.masterpet.co.in' }} migrate
-          bench restart 
+          
+          # Restart bench without supervisor
+          bench restart --force
+          
+          # Verify the site is up
+          sleep 10
+          if curl -s -f "https://${{ github.ref_name == 'main' && 'erp.masterpet.co.in' || 'dev.masterpet.co.in' }}" > /dev/null; then
+            echo "Deployment successful!"
+          else
+            echo "Deployment might have issues - please check the site manually"
+            exit 1
+          fi 
