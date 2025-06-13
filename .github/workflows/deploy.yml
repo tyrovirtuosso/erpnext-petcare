@@ -1,4 +1,4 @@
-name: Deploy to Masterpet Frappe Server
+name: Deploy to Masterpet Server
 
 on:
   push:
@@ -9,36 +9,14 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Deploy to server
+    - name: Deploy to Frappe Server via SSH
       uses: appleboy/ssh-action@v1.0.0
       with:
         host: ${{ secrets.SSH_HOST }}
         username: ${{ secrets.SSH_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          # Deploy code
-          cd ~/frappe-bench/apps/petcare
-          git fetch origin
-          git checkout ${{ github.ref_name }}
-          git pull origin ${{ github.ref_name }}
-          
-          # Run migrations and restart
-          cd ~/frappe-bench
-          sudo bench --site ${{ github.ref_name == 'main' && 'erp.masterpet.co.in' || 'dev.masterpet.co.in' }} migrate
-          
-          # Restart services
-          sudo supervisorctl restart all
-          
-          # Clear cache
-          sudo bench --site ${{ github.ref_name == 'main' && 'erp.masterpet.co.in' || 'dev.masterpet.co.in' }} clear-cache
-          
-          # Verify the site is up
-          sleep 10
-          if curl -s -f "https://${{ github.ref_name == 'main' && 'erp.masterpet.co.in' || 'dev.masterpet.co.in' }}" > /dev/null; then
-            echo "Deployment successful!"
-          else
-            echo "Deployment might have issues - please check the site manually"
-            exit 1
-          fi 
+          # Run deploy script with the current branch name
+          bash ~/frappe-bench/deploy.sh ${{ github.ref_name }}
