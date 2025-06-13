@@ -35,6 +35,16 @@ Watch how the AI Accountant automates the entire accounting workflow:
 - Seamless ERPNext integration
 - GST-compliant accounting entries
 
+### CI/CD Pipeline in Action
+[![CI/CD Pipeline Demo](https://img.youtube.com/vi/BkBdrBQcXjs/maxresdefault.jpg)](https://youtu.be/BkBdrBQcXjs)
+
+See our automated deployment pipeline in action:
+- GitHub Actions workflow execution
+- Automated deployment to development and production
+- Zero-downtime updates
+- Automatic backup creation
+- Health checks and monitoring
+
 ## Installation
 
 1. Get the app:
