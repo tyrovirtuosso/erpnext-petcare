@@ -5,6 +5,85 @@ app_description = "Petcare modules"
 app_email = "sjsj.cloud@gmail.com"
 app_license = "mit"
 
+# Scheduler Reference Guide
+# -----------------------
+
+# 1. How to create a new scheduled job in console:
+"""
+import frappe
+doc = frappe.get_doc({
+    'doctype': 'Scheduled Job Type',
+    'method': 'petcare.scripts.scheduler_events.daily_customer_service_update',
+    'frequency': 'Cron',
+    'cron_format': '30 21 * * *',  # Runs at 3:00 AM IST (21:30 UTC)
+    'status': 'Active',
+    'docstatus': 0
+})
+doc.insert()
+frappe.db.commit()
+"""
+
+# 2. How to check all active PetCare scheduled jobs in console:
+"""
+import frappe
+jobs = frappe.get_all('Scheduled Job Type', 
+    filters=[
+        ['stopped', '=', 0],
+        ['method', 'like', '%petcare%']
+    ],
+    fields=['method', 'frequency', 'cron_format', 'last_execution']
+)
+for job in jobs:
+    print(f"\nMethod: {job.method}")
+    print(f"Frequency: {job.frequency}")
+    print(f"Cron Format: {job.cron_format}")
+    print(f"Last Execution: {job.last_execution}")
+"""
+
+doc_events = {}
+override_whitelisted_methods = {}
+override_doctype_class = {}
+
+scheduler_events = {
+    "cron": {
+        "0 4 * * *": [  # This cron expression runs the task every day at 4:00 AM
+            "petcare.scripts.generate_recurring_service_requests.generate_recurring_service_requests"
+        ],
+        "0 3 * * *": [
+            "petcare.scripts.update_customer_service_details.update_customer_service_details"
+        ]
+    }
+}
+
+doc_events = {
+    "Service Request": {
+        "on_update": "petcare.scripts.service_request_hooks.update_latest_completed_service",
+        "on_submit": "petcare.scripts.loyalty.update_loyalty_totals",
+        "before_save": "petcare.scripts.loyalty.update_loyalty_totals",
+    },
+    "Customer": {
+        "before_save": "petcare.scripts.update_customer_coordinates.update_single_customer_coordinates"
+    },
+    "Call Task": {
+        "on_update": "petcare.api.call_task.call_task.on_update"
+    }
+}
+
+permission_query_conditions = {
+    "Contact": "petcare.scripts.contact_permissions.get_contact_permission_query"
+}
+    
+has_whitelisted_web_request = True
+
+
+
+# doc_events = {
+#     "Contact": {
+#         "after_save": "petcare.scripts.contact_hooks.update_customer_mobile_no"
+#     }
+# }
+
+
 # Apps
 # ------------------
 
@@ -29,8 +108,8 @@ app_license = "mit"
 # app_include_js = "/assets/petcare/js/petcare.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/petcare/css/petcare.css"
 # web_include_js = "/assets/petcare/js/petcare.js"
+# web_include_css = "/assets/petcare/css/petcare.css"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "petcare/public/scss/website"
@@ -145,25 +224,33 @@ app_license = "mit"
 # 	}
 # }
 
-# Scheduled Tasks
-# ---------------
+#Scheduled Tasks
+#---------------
 
 # scheduler_events = {
-# 	"all": [
-# 		"petcare.tasks.all"
-# 	],
+#     "daily": [
+#         "petcare.scripts.generate_recurring_service_requests.generate_recurring_service_requests"
+#     ]
+# }
+
+
+
+# scheduler_events = {
+# 	# "all": [
+# 	# 	"petcare.tasks.all"
+# 	# ],
 # 	"daily": [
-# 		"petcare.tasks.daily"
+# 		"petcare.scripts.generate_recurring_service_requests.generate_recurring_service_requests"
 # 	],
-# 	"hourly": [
-# 		"petcare.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"petcare.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"petcare.tasks.monthly"
-# 	],
+# 	# "hourly": [
+# 	# 	"petcare.tasks.hourly"
+# 	# ],
+# 	# "weekly": [
+# 	# 	"petcare.tasks.weekly"
+# 	# ],
+# 	# "monthly": [
+# 	# 	"petcare.tasks.monthly"
+# 	# ],
 # }
 
 # Testing

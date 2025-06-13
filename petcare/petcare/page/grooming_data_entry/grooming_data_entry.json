@@ -1,0 +1,25 @@
+{
+  "content": null,
+  "creation": "2024-01-01 00:00:00.000000",
+  "docstatus": 0,
+  "doctype": "Page",
+  "idx": 0,
+  "modified": "2024-01-01 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Petcare",
+  "name": "grooming_data_entry",
+  "owner": "Administrator",
+  "page_name": "grooming_data_entry",
+  "roles": [
+    {
+      "role": "Driver"
+    },
+    {
+      "role": "Petcare"
+    }
+  ],
+  "script": null,
+  "standard": "Yes",
+  "style": null,
+  "system_page": 0
+} 

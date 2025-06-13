@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-13 12:20:20.709397",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "service_request",
+  "visit_date",
+  "status",
+  "customer_section",
+  "customer",
+  "customer_changes_json",
+  "pet_section",
+  "pet",
+  "pet_changes_json",
+  "grooming_section",
+  "grooming_notes",
+  "grooming_photos",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_request",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Service Request",
+   "options": "Service Request",
+   "reqd": 1
+  },
+  {
+   "fieldname": "visit_date",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Visit Date",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmitted\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Information"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_changes_json",
+   "fieldtype": "Code",
+   "label": "Customer Changes",
+   "options": "JSON"
+  },
+  {
+   "fieldname": "pet_section",
+   "fieldtype": "Section Break",
+   "label": "Pet Information"
+  },
+  {
+   "fieldname": "pet",
+   "fieldtype": "Link",
+   "label": "Pet",
+   "options": "Pet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pet_changes_json",
+   "fieldtype": "Code",
+   "label": "Pet Changes",
+   "options": "JSON"
+  },
+  {
+   "fieldname": "grooming_section",
+   "fieldtype": "Section Break",
+   "label": "Grooming Report"
+  },
+  {
+   "fieldname": "grooming_notes",
+   "fieldtype": "Text Editor",
+   "label": "Grooming Notes"
+  },
+  {
+   "fieldname": "grooming_photos",
+   "fieldtype": "Table",
+   "label": "Photos",
+   "options": "Grooming Photo"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Grooming Visit Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-13 12:20:20.709397",
+ "modified_by": "Administrator",
+ "module": "Petcare",
+ "name": "Grooming Visit Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

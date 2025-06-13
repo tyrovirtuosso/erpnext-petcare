@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-13 23:35:12.884546",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "field_name",
+  "current_value",
+  "suggested_value",
+  "notes",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "field_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Field Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Current Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "suggested_value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Suggested Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nReviewed\nResolved"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-13 23:41:40.507627",
+ "modified_by": "Administrator",
+ "module": "Petcare",
+ "name": "Grooming Report Discrepancy",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

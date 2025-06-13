@@ -1,0 +1,191 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-13 23:36:03.196550",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "service_request",
+  "status",
+  "driver",
+  "customer_section",
+  "customer",
+  "pet",
+  "service_details_section",
+  "service_date",
+  "service_time",
+  "grooming_details_section",
+  "grooming_checklist",
+  "pet_behavior_notes",
+  "discrepancy_section",
+  "has_discrepancies",
+  "discrepancies",
+  "photos_section",
+  "before_photos",
+  "after_photos"
+ ],
+ "fields": [
+  {
+   "fieldname": "service_request",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Service Request",
+   "options": "Service Request",
+   "reqd": 1
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Draft\nSubmitted\nHas Discrepancies\nResolved",
+   "reqd": 1
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Driver",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Information"
+  },
+  {
+   "fetch_from": "service_request.customer",
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "service_request.pet",
+   "fieldname": "pet",
+   "fieldtype": "Link",
+   "label": "Pet",
+   "options": "Pet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_details_section",
+   "fieldtype": "Section Break",
+   "label": "Service Details"
+  },
+  {
+   "fieldname": "service_date",
+   "fieldtype": "Date",
+   "label": "Service Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_time",
+   "fieldtype": "Time",
+   "label": "Service Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "grooming_details_section",
+   "fieldtype": "Section Break",
+   "label": "Grooming Details"
+  },
+  {
+   "fieldname": "grooming_checklist",
+   "fieldtype": "Table",
+   "label": "Grooming Checklist",
+   "options": "Grooming Checklist Item"
+  },
+  {
+   "fieldname": "pet_behavior_notes",
+   "fieldtype": "Text Editor",
+   "label": "Pet Behavior Notes"
+  },
+  {
+   "fieldname": "discrepancy_section",
+   "fieldtype": "Section Break",
+   "label": "Discrepancies"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_discrepancies",
+   "fieldtype": "Check",
+   "label": "Has Discrepancies"
+  },
+  {
+   "fieldname": "discrepancies",
+   "fieldtype": "Table",
+   "label": "Discrepancies",
+   "options": "Grooming Report Discrepancy"
+  },
+  {
+   "fieldname": "photos_section",
+   "fieldtype": "Section Break",
+   "label": "Photos"
+  },
+  {
+   "fieldname": "before_photos",
+   "fieldtype": "Table",
+   "label": "Before Photos",
+   "options": "Grooming Photo"
+  },
+  {
+   "fieldname": "after_photos",
+   "fieldtype": "Table",
+   "label": "After Photos",
+   "options": "Grooming Photo"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-13 23:41:39.623128",
+ "modified_by": "Administrator",
+ "module": "Petcare",
+ "name": "Grooming Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Driver",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

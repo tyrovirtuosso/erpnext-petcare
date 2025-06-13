@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-Grooming Report</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+        
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html, body { 
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #d9eefc; /* Light Blue Background */
+            color: #00008b; /* Dark blue text */
+        }
+        
+        .canvas-container { 
+            width: 210mm;
+            height: 297mm;
+            margin: 0 auto;
+            position: relative;
+            background-color: #d9eefc; /* Light Blue Background */
+            overflow: hidden;
+        }
+        
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px 30px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Pet illustrations */
+        .pet-illustration {
+            position: absolute;
+            z-index: 0;
+            width: 100px;
+            height: auto;
+        }
+        
+        .dog-peeping {
+            top: 20px;
+            left: 20px;
+            transform: rotate(-5deg);
+        }
+        
+        .cat-peeping {
+            bottom: 40px;
+            right: 20px;
+            transform: rotate(5deg);
+        }
+        
+        /* Date section */
+        .date-section {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 14px;
+            color: #00008b;
+            font-weight: 600;
+        }
+        
+        /* Logo container */
+        .logo-container {
+            text-align: center; 
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            width: 180px;
+            height: auto;
+        }
+        
+        /* Pet header */
+        .pet-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .pet-name {
+            font-size: 48px;
+            font-weight: 800;
+            color: #00008b;
+            margin: 0;
+        }
+        
+        .spa-day {
+            font-size: 48px;
+            font-weight: 800;
+            color: #00008b;
+            margin: 0;
+        }
+        
+        /* Pet info section */
+        .pet-info-section {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .pet-info-grid {
+            display: grid;
+            grid-template-columns: auto 1fr 1fr;
+            gap: 20px 60px;
+            align-items: center;
+        }
+        
+        .pet-image-container {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            grid-row: span 3;
+        }
+        
+        .pet-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .info-label {
+            font-size: 14px;
+            color: #00008b;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .info-value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #00008b;
+        }
+        
+        /* Footer */
+        .footer {
+            margin-top: auto;
+            padding-top: 40px;
+            text-align: center;
+        }
+        
+        .thank-you {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: #00008b;
+            margin-bottom: 20px;
+        }
+        
+        .disclaimer {
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+            padding: 15px;
+            font-size: 12px;
+            text-align: center; 
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .disclaimer-title {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 5px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas-container">
+        <!-- Pet illustrations -->
+        <img class="pet-illustration dog-peeping" src="{{ dog_illustration }}" alt="Dog Illustration">
+        <img class="pet-illustration cat-peeping" src="{{ cat_illustration }}" alt="Cat Illustration">
+        
+        <div class="content">
+            <!-- Date -->
+            <div class="date-section">
+                Date: {{ grooming_date }}
+            </div>
+            
+            <!-- Logo -->
+            <div class="logo-container">
+                <img class="logo" src="{{ logo }}" alt="Company Logo">
+            </div>
+            
+            <!-- Pet Header -->
+            <div class="pet-header">
+                <h1 class="pet-name">{{ pet_name }}'s Spa Day</h1>
+            </div>
+            
+            <!-- Pet Info Section -->
+            <div class="pet-info-section">
+                <div class="pet-info-grid">
+                    <div class="pet-image-container">
+                        <img class="pet-image" src="{{ pet_image_base64 }}" alt="{{ pet_name }}">
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-value">{{ owner_name }}</div>
+                        <div class="info-label">Pet Parent</div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-value">{{ pet_breed }}</div>
+                        <div class="info-label">Breed</div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-value">{{ pet_gender }}</div>
+                        <div class="info-label">Gender</div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-value">{{ pet_age }}</div>
+                        <div class="info-label">Age</div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-value">{{ pet_birthday }}</div>
+                        <div class="info-label">Birthday</div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-value">{{ package_name }}</div>
+                        <div class="info-label">Package</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="footer">
+                <div class="thank-you">
+                    THANK YOU FOR TRUSTING US
+                </div>
+                
+                <div class="disclaimer">
+                    <div class="disclaimer-title">Disclaimer</div>
+                    <p>The health checkup was conducted by skilled groomers trained to observe visible signs, but they are not veterinarians. For health concerns or symptoms post-grooming, consult veterinary doctor for expert advice and care. Loyalty points earned can be used for Masterpet grooming and health services as per our program terms. Contact customer service for details.</p>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

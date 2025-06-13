@@ -1,0 +1,1109 @@
+[
+  {
+    "name": "Application of Funds (Assets) - MP",
+    "account_name": "Application of Funds (Assets)",
+    "account_type": "",
+    "is_group": 1,
+    "children": [
+      {
+        "name": "Current Assets - MP",
+        "account_name": "Current Assets",
+        "account_type": "",
+        "is_group": 1,
+        "children": [
+          {
+            "name": "Accounts Receivable - MP",
+            "account_name": "Accounts Receivable",
+            "account_type": "",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Debtors - MP",
+                "account_name": "Debtors",
+                "account_type": "Receivable",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Bank Accounts - MP",
+            "account_name": "Bank Accounts",
+            "account_type": "Bank",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Bank Account - MP",
+                "account_name": "Bank Account",
+                "account_type": "Bank",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Cash In Hand - MP",
+            "account_name": "Cash In Hand",
+            "account_type": "Cash",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Cash - MP",
+                "account_name": "Cash",
+                "account_type": "Cash",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Loans and Advances (Assets) - MP",
+            "account_name": "Loans and Advances (Assets)",
+            "account_type": "",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Employee Advances - MP",
+                "account_name": "Employee Advances",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Advance against Vehicle - MP",
+                "account_name": "Advance against Vehicle",
+                "account_type": "Current Asset",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Vendor Advances - MP",
+                "account_name": "Vendor Advances",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Advance Rent - MP",
+                "account_name": "Advance Rent",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Securities and Deposits - MP",
+            "account_name": "Securities and Deposits",
+            "account_type": "",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Earnest Money - MP",
+                "account_name": "Earnest Money",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Rent Security Deposits - MP",
+                "account_name": "Rent Security Deposits",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Stock Assets - MP",
+            "account_name": "Stock Assets",
+            "account_type": "Stock",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Stock In Hand - MP",
+                "account_name": "Stock In Hand",
+                "account_type": "Stock",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Tax Assets - MP",
+            "account_name": "Tax Assets",
+            "account_type": "",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Input Tax CGST - MP",
+                "account_name": "Input Tax CGST",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Input Tax SGST - MP",
+                "account_name": "Input Tax SGST",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Input Tax IGST - MP",
+                "account_name": "Input Tax IGST",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Fixed Assets - MP",
+        "account_name": "Fixed Assets",
+        "account_type": "",
+        "is_group": 1,
+        "children": [
+          {
+            "name": "Capital Equipments - MP",
+            "account_name": "Capital Equipments",
+            "account_type": "Fixed Asset",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Electronic Equipments - MP",
+            "account_name": "Electronic Equipments",
+            "account_type": "Fixed Asset",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Furnitures and Fixtures - MP",
+            "account_name": "Furnitures and Fixtures",
+            "account_type": "Fixed Asset",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Office Equipments - MP",
+            "account_name": "Office Equipments",
+            "account_type": "Fixed Asset",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Plants and Machineries - MP",
+            "account_name": "Plants and Machineries",
+            "account_type": "Fixed Asset",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Buildings - MP",
+            "account_name": "Buildings",
+            "account_type": "Fixed Asset",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Softwares - MP",
+            "account_name": "Softwares",
+            "account_type": "Fixed Asset",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Accumulated Depreciation - MP",
+            "account_name": "Accumulated Depreciation",
+            "account_type": "Accumulated Depreciation",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "CWIP Account - MP",
+            "account_name": "CWIP Account",
+            "account_type": "Capital Work in Progress",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Equipment - Grooming Truck - MP",
+            "account_name": "Equipment - Grooming Truck",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Vehicles - MP",
+            "account_name": "Vehicles",
+            "account_type": "Fixed Asset",
+            "is_group": 0,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Investments - MP",
+        "account_name": "Investments",
+        "account_type": "",
+        "is_group": 1,
+        "children": []
+      },
+      {
+        "name": "Temporary Accounts - MP",
+        "account_name": "Temporary Accounts",
+        "account_type": "",
+        "is_group": 1,
+        "children": [
+          {
+            "name": "Temporary Opening - MP",
+            "account_name": "Temporary Opening",
+            "account_type": "Temporary",
+            "is_group": 0,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Intangible Assets - MP",
+        "account_name": "Intangible Assets",
+        "account_type": "",
+        "is_group": 1,
+        "children": [
+          {
+            "name": "Mobile App WIP - MP",
+            "account_name": "Mobile App WIP",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Mobile App (Completed) - MP",
+            "account_name": "Mobile App (Completed)",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Branding WIP - MP",
+            "account_name": "Branding WIP",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Branding (Completed) - MP",
+            "account_name": "Branding (Completed)",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Expenses - MP",
+    "account_name": "Expenses",
+    "account_type": "",
+    "is_group": 1,
+    "children": [
+      {
+        "name": "Direct Expenses - MP",
+        "account_name": "Direct Expenses",
+        "account_type": "",
+        "is_group": 1,
+        "children": [
+          {
+            "name": "Stock Expenses - MP",
+            "account_name": "Stock Expenses",
+            "account_type": "",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Cost of Goods Sold - MP",
+                "account_name": "Cost of Goods Sold",
+                "account_type": "Cost of Goods Sold",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Expenses Included In Asset Valuation - MP",
+                "account_name": "Expenses Included In Asset Valuation",
+                "account_type": "Expenses Included In Asset Valuation",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Expenses Included In Valuation - MP",
+                "account_name": "Expenses Included In Valuation",
+                "account_type": "Expenses Included In Valuation",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Stock Adjustment - MP",
+                "account_name": "Stock Adjustment",
+                "account_type": "Stock Adjustment",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Customs Duty Expense - MP",
+                "account_name": "Customs Duty Expense",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Sales Refunds - MP",
+            "account_name": "Sales Refunds",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Pet Grooming Consumables - MP",
+            "account_name": "Pet Grooming Consumables",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Pet Grooming Tools - MP",
+            "account_name": "Pet Grooming Tools",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Fuel Expense - Mobile Truck - MP",
+            "account_name": "Fuel Expense - Mobile Truck",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Generator Petrol Expense - Mobile Truck - MP",
+            "account_name": "Generator Petrol Expense - Mobile Truck",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Toll Expense - Mobile Truck - MP",
+            "account_name": "Toll Expense - Mobile Truck",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Indirect Expenses - MP",
+        "account_name": "Indirect Expenses",
+        "account_type": "",
+        "is_group": 1,
+        "children": [
+          {
+            "name": "Administrative Expenses - MP",
+            "account_name": "Administrative Expenses",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Commission on Sales - MP",
+            "account_name": "Commission on Sales",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Depreciation - MP",
+            "account_name": "Depreciation",
+            "account_type": "Depreciation",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Entertainment Expenses - MP",
+            "account_name": "Entertainment Expenses",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Freight and Forwarding Charges - MP",
+            "account_name": "Freight and Forwarding Charges",
+            "account_type": "Chargeable",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Legal Expenses - MP",
+            "account_name": "Legal Expenses",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Marketing Expenses - MP",
+            "account_name": "Marketing Expenses",
+            "account_type": "Chargeable",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Miscellaneous Expenses - MP",
+            "account_name": "Miscellaneous Expenses",
+            "account_type": "Chargeable",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Office Maintenance Expenses - MP",
+            "account_name": "Office Maintenance Expenses",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Office Rent - MP",
+            "account_name": "Office Rent",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Postal Expenses - MP",
+            "account_name": "Postal Expenses",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Print and Stationery - MP",
+            "account_name": "Print and Stationery",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Round Off - MP",
+            "account_name": "Round Off",
+            "account_type": "Round Off",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Salary - MP",
+            "account_name": "Salary",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Sales Expenses - MP",
+            "account_name": "Sales Expenses",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Telephone Expenses - MP",
+            "account_name": "Telephone Expenses",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Travel Expenses - MP",
+            "account_name": "Travel Expenses",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Utility Expenses - MP",
+            "account_name": "Utility Expenses",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Write Off - MP",
+            "account_name": "Write Off",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Exchange Gain/Loss - MP",
+            "account_name": "Exchange Gain/Loss",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Gain/Loss on Asset Disposal - MP",
+            "account_name": "Gain/Loss on Asset Disposal",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Impairment - MP",
+            "account_name": "Impairment",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "GST Expense - MP",
+            "account_name": "GST Expense",
+            "account_type": "Tax",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Professional Fees - MP",
+            "account_name": "Professional Fees",
+            "account_type": "Indirect Expense",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Architect Consulting Fees - MP",
+                "account_name": "Architect Consulting Fees",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Consulting Fees - MP",
+                "account_name": "Consulting Fees",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Grooming Truck Expense - MP",
+            "account_name": "Grooming Truck Expense",
+            "account_type": "",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Grooming Truck Road Tax Expense - MP",
+                "account_name": "Grooming Truck Road Tax Expense",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Grooming Truck Maintenance - MP",
+                "account_name": "Grooming Truck Maintenance",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Grooming Truck - Other Expenses - MP",
+                "account_name": "Grooming Truck - Other Expenses",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Grooming Truck - Repairs & Damages - MP",
+                "account_name": "Grooming Truck - Repairs & Damages",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Grooming Truck - Food Expenses - MP",
+                "account_name": "Grooming Truck - Food Expenses",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Groomer Consultant - Food Expense - MP",
+            "account_name": "Groomer Consultant - Food Expense",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Groomer Consultant - Travel/Conveyance Expense - MP",
+            "account_name": "Groomer Consultant - Travel/Conveyance Expense",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Groomer Consultant - Accommodation Expense - MP",
+            "account_name": "Groomer Consultant - Accommodation Expense",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Preliminary Expense - MP",
+            "account_name": "Preliminary Expense",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Bank Charges - MP",
+            "account_name": "Bank Charges",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Meeting Expense - MP",
+            "account_name": "Meeting Expense",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Hiring Expense - MP",
+            "account_name": "Hiring Expense",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "IT Expense - MP",
+            "account_name": "IT Expense",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Sim Recharge Expense - MP",
+            "account_name": "Sim Recharge Expense",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Staff Expense - MP",
+            "account_name": "Staff Expense",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Loan Interest Expense - MP",
+            "account_name": "Loan Interest Expense",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Commission on Sales Revenue - MP",
+            "account_name": "Commission on Sales Revenue",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Staff Welfare Expense - MP",
+            "account_name": "Staff Welfare Expense",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Income - MP",
+    "account_name": "Income",
+    "account_type": "",
+    "is_group": 1,
+    "children": [
+      {
+        "name": "Direct Income - MP",
+        "account_name": "Direct Income",
+        "account_type": "",
+        "is_group": 1,
+        "children": [
+          {
+            "name": "Service - MP",
+            "account_name": "Service",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Sales - MP",
+            "account_name": "Sales",
+            "account_type": "",
+            "is_group": 0,
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Indirect Income - MP",
+        "account_name": "Indirect Income",
+        "account_type": "",
+        "is_group": 1,
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Source of Funds (Liabilities) - MP",
+    "account_name": "Source of Funds (Liabilities)",
+    "account_type": "",
+    "is_group": 1,
+    "children": [
+      {
+        "name": "Current Liabilities - MP",
+        "account_name": "Current Liabilities",
+        "account_type": "",
+        "is_group": 1,
+        "children": [
+          {
+            "name": "Accounts Payable - MP",
+            "account_name": "Accounts Payable",
+            "account_type": "",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Creditors - MP",
+                "account_name": "Creditors",
+                "account_type": "Payable",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Payroll Payable - MP",
+                "account_name": "Payroll Payable",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Stock Liabilities - MP",
+            "account_name": "Stock Liabilities",
+            "account_type": "",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Stock Received But Not Billed - MP",
+                "account_name": "Stock Received But Not Billed",
+                "account_type": "Stock Received But Not Billed",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Asset Received But Not Billed - MP",
+                "account_name": "Asset Received But Not Billed",
+                "account_type": "Asset Received But Not Billed",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Duties and Taxes - MP",
+            "account_name": "Duties and Taxes",
+            "account_type": "Tax",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "TDS Payable - MP",
+                "account_name": "TDS Payable",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Customs Duty Payable - MP",
+                "account_name": "Customs Duty Payable",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Output Tax SGST - MP",
+                "account_name": "Output Tax SGST",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Output Tax CGST - MP",
+                "account_name": "Output Tax CGST",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Output Tax IGST - MP",
+                "account_name": "Output Tax IGST",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Output Tax SGST RCM - MP",
+                "account_name": "Output Tax SGST RCM",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Output Tax CGST RCM - MP",
+                "account_name": "Output Tax CGST RCM",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Output Tax IGST RCM - MP",
+                "account_name": "Output Tax IGST RCM",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Input Tax CGST RCM - MP",
+                "account_name": "Input Tax CGST RCM",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Input Tax SGST RCM - MP",
+                "account_name": "Input Tax SGST RCM",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Input Tax IGST RCM - MP",
+                "account_name": "Input Tax IGST RCM",
+                "account_type": "Tax",
+                "is_group": 0,
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Loans (Liabilities) - MP",
+            "account_name": "Loans (Liabilities)",
+            "account_type": "",
+            "is_group": 1,
+            "children": [
+              {
+                "name": "Secured Loans - MP",
+                "account_name": "Secured Loans",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Unsecured Loans - MP",
+                "account_name": "Unsecured Loans",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Bank Overdraft Account - MP",
+                "account_name": "Bank Overdraft Account",
+                "account_type": "",
+                "is_group": 0,
+                "children": []
+              },
+              {
+                "name": "Loan from Directors - MP",
+                "account_name": "Loan from Directors",
+                "account_type": "Liability",
+                "is_group": 1,
+                "children": [
+                  {
+                    "name": "Loan from Director - SEBASTIAN KOIKKARA - MP",
+                    "account_name": "Loan from Director - SEBASTIAN KOIKKARA",
+                    "account_type": "Liability",
+                    "is_group": 0,
+                    "children": []
+                  },
+                  {
+                    "name": "Loan from Director - AKASH MANUJI - MP",
+                    "account_name": "Loan from Director - AKASH MANUJI",
+                    "account_type": "Liability",
+                    "is_group": 0,
+                    "children": []
+                  },
+                  {
+                    "name": "Loan from Director - CARRON PHIL JOJU - MP",
+                    "account_name": "Loan from Director - CARRON PHIL JOJU",
+                    "account_type": "Liability",
+                    "is_group": 0,
+                    "children": []
+                  },
+                  {
+                    "name": "Loan from Director - SHANE JAMES - MP",
+                    "account_name": "Loan from Director - SHANE JAMES",
+                    "account_type": "Liability",
+                    "is_group": 0,
+                    "children": []
+                  },
+                  {
+                    "name": "Loan from Director - PRITHVIRAJ RAJESH GOPAL - MP",
+                    "account_name": "Loan from Director - PRITHVIRAJ RAJESH GOPAL",
+                    "account_type": "Liability",
+                    "is_group": 0,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Equity - MP",
+    "account_name": "Equity",
+    "account_type": "",
+    "is_group": 1,
+    "children": [
+      {
+        "name": "Capital Stock - MP",
+        "account_name": "Capital Stock",
+        "account_type": "Equity",
+        "is_group": 0,
+        "children": []
+      },
+      {
+        "name": "Dividends Paid - MP",
+        "account_name": "Dividends Paid",
+        "account_type": "Equity",
+        "is_group": 0,
+        "children": []
+      },
+      {
+        "name": "Opening Balance Equity - MP",
+        "account_name": "Opening Balance Equity",
+        "account_type": "Equity",
+        "is_group": 0,
+        "children": []
+      },
+      {
+        "name": "Retained Earnings - MP",
+        "account_name": "Retained Earnings",
+        "account_type": "Equity",
+        "is_group": 0,
+        "children": []
+      },
+      {
+        "name": "Revaluation Surplus - MP",
+        "account_name": "Revaluation Surplus",
+        "account_type": "Equity",
+        "is_group": 0,
+        "children": []
+      },
+      {
+        "name": "Equity - Investment by Directors - MP",
+        "account_name": "Equity - Investment by Directors",
+        "account_type": "Equity",
+        "is_group": 1,
+        "children": [
+          {
+            "name": "Investment - SHANE JAMES - MP",
+            "account_name": "Investment - SHANE JAMES",
+            "account_type": "Equity",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Investment - CARRON PHIL JOJU - MP",
+            "account_name": "Investment - CARRON PHIL JOJU",
+            "account_type": "Equity",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Investment - AKASH MANUJI - MP",
+            "account_name": "Investment - AKASH MANUJI",
+            "account_type": "Equity",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Investment - SEBASTIAN KOIKKARA - MP",
+            "account_name": "Investment - SEBASTIAN KOIKKARA",
+            "account_type": "Equity",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Investment - PRITHVIRAJ RAJESH GOPAL - MP",
+            "account_name": "Investment - PRITHVIRAJ RAJESH GOPAL",
+            "account_type": "Equity",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Pet Store Investment - SHANE JAMES - MP",
+            "account_name": "Pet Store Investment - SHANE JAMES",
+            "account_type": "Equity",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Pet Store Investment - CARRON PHIL JOJU - MP",
+            "account_name": "Pet Store Investment - CARRON PHIL JOJU",
+            "account_type": "Equity",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Pet Store Investment - AKASH MANUJI - MP",
+            "account_name": "Pet Store Investment - AKASH MANUJI",
+            "account_type": "Equity",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Pet Store Investment - SEBASTIAN KOIKKARA - MP",
+            "account_name": "Pet Store Investment - SEBASTIAN KOIKKARA",
+            "account_type": "Equity",
+            "is_group": 0,
+            "children": []
+          },
+          {
+            "name": "Pet Store Investment - PRITHVIRAJ RAJESH GOPAL - MP",
+            "account_name": "Pet Store Investment - PRITHVIRAJ RAJESH GOPAL",
+            "account_type": "Equity",
+            "is_group": 0,
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]
