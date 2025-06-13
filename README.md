@@ -45,6 +45,24 @@ See our automated deployment pipeline in action:
 - Automatic backup creation
 - Health checks and monitoring
 
+### Voxbay Telephony Integration
+[![Voxbay Integration Demo](https://img.youtube.com/vi/_W5jDjjMqxc/maxresdefault.jpg)](https://youtu.be/_W5jDjjMqxc)
+
+Experience seamless telephony integration with ERPNext:
+- Automatic call logging and tracking
+- Real-time customer identification
+- Call recording management
+- Automated customer creation
+- Detailed call analytics and reporting
+
+#### API Integration
+Our Voxbay integration uses a robust API system:
+- Secure API key authentication
+- Real-time webhook processing
+- Automatic customer data synchronization
+- Intelligent call status tracking
+- Comprehensive error handling and logging
+
 ## Installation
 
 1. Get the app:
