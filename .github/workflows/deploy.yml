@@ -26,13 +26,13 @@ jobs:
           
           # Run migrations and restart
           cd ~/frappe-bench
-          bench --site ${{ github.ref_name == 'main' && 'erp.masterpet.co.in' || 'dev.masterpet.co.in' }} migrate
+          sudo bench --site ${{ github.ref_name == 'main' && 'erp.masterpet.co.in' || 'dev.masterpet.co.in' }} migrate
           
           # Restart services
-          bench restart
+          sudo supervisorctl restart all
           
           # Clear cache
-          bench --site ${{ github.ref_name == 'main' && 'erp.masterpet.co.in' || 'dev.masterpet.co.in' }} clear-cache
+          sudo bench --site ${{ github.ref_name == 'main' && 'erp.masterpet.co.in' || 'dev.masterpet.co.in' }} clear-cache
           
           # Verify the site is up
           sleep 10
