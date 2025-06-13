@@ -45,4 +45,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ---
 
-**Maintainer:** [yourname](mailto:your@email.com)
+**Maintainer:** [Shane](mailto:shanejms2@gmail.com)
