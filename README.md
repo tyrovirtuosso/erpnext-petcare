@@ -12,9 +12,28 @@ A custom [Frappe/ERPNext](https://erpnext.com/) app for managing pet care servic
 - **Pet Grooming Management:** Track grooming reports, checklists, and photos.
 - **Customer Engagement:** Tagging, loyalty programs, and automated service reminders.
 - **Call Management:** Campaigns, call tasks, outcomes, and metrics for CRM-like workflows.
+- **AI Accountant:** Automated journal entry creation using AI and Google Sheets/Drive integration:
+  - Fetches transactions from Google Sheets
+  - Processes invoices and documents from Google Drive
+  - Uses AI to generate accurate journal entries
+  - Automatically creates entries in ERPNext
+  - Handles GST compliance and company-specific configurations
+  - Includes OCR capabilities for invoice processing
 - **Integrations:** Google Calendar, Google Sheets, Voxbay telephony, and more.
 - **Automation:** Scheduled jobs for recurring service requests, customer updates, and loyalty calculations.
 - **API Endpoints:** For service requests, messaging, and external integrations.
+
+## Demo
+
+### AI Accountant in Action
+[![AI Accountant Demo](https://img.youtube.com/vi/je0u836lZHg/maxresdefault.jpg)](https://youtu.be/je0u836lZHg?si=poDj-4Ff7lum0mtA)
+
+Watch how the AI Accountant automates the entire accounting workflow:
+- Automated transaction fetching from Google Sheets
+- Intelligent invoice processing with OCR
+- AI-powered journal entry generation
+- Seamless ERPNext integration
+- GST-compliant accounting entries
 
 ## Installation
 

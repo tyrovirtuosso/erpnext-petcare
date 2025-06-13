@@ -22,8 +22,8 @@ def filter_fn(transaction):
     if transaction.get("Account") == "Sales - MP":
         return False
     # Only process if Tran. Id is in the list (if list is set)
-    if TRAN_ID_LIST:
-        return transaction.get("Tran. Id") in TRAN_ID_LIST
+    # if TRAN_ID_LIST:
+    #     return transaction.get("Tran. Id") in TRAN_ID_LIST
     return True
 
 def main():
