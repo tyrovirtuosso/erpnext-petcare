@@ -63,6 +63,25 @@ Our Voxbay integration uses a robust API system:
 - Intelligent call status tracking
 - Comprehensive error handling and logging
 
+### Customer Location Map
+[![Customer Location Map Demo](https://img.youtube.com/vi/LmUPbutaJa0/maxresdefault.jpg)](https://youtu.be/LmUPbutaJa0)
+
+Interactive map visualization of customer locations with advanced features:
+- Real-time customer location tracking
+- Lead status-based filtering
+- Cluster-based visualization
+- Interactive customer information cards
+- Territory-based grouping
+- Service history integration
+
+#### Key Features
+- **Smart Clustering**: Automatically groups nearby customers for better visualization
+- **Status-based Filtering**: Filter customers by lead status (New Lead, Interested, Converted, Lost)
+- **Interactive Info Cards**: Quick access to customer details, service history, and contact information
+- **Territory Management**: Visualize customer distribution across different territories
+- **Service Tracking**: View days since last service and total pets for each customer
+- **Facility Indicators**: Quick view of parking, electricity, and water availability
+
 ## Installation
 
 1. Get the app:
