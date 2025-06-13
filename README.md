@@ -122,6 +122,45 @@ bench --site dev.masterpet.co.in console
 bench --site erp.masterpet.co.in console
 ```
 
+## Continuous Integration/Deployment (CI/CD)
+
+Our project uses GitHub Actions for automated deployments to both development and production environments.
+
+### 🚀 Automated Deployment Flow
+
+- **Development Branch (`dev`)**: 
+  - Automatically deploys to [dev.masterpet.co.in](https://dev.masterpet.co.in)
+  - Triggered on every push to the `dev` branch
+
+- **Production Branch (`main`)**: 
+  - Automatically deploys to [erp.masterpet.co.in](https://erp.masterpet.co.in)
+  - Triggered on every push to the `main` branch
+
+### 🔧 How It Works
+
+1. **GitHub Actions Workflow**
+   - Located in `.github/workflows/deploy.yml`
+   - Uses `appleboy/ssh-action` for secure SSH deployment
+   - Triggers automatically on code pushes
+
+2. **Server-Side Deployment Script**
+   - Located at `~/frappe-bench/deploy.sh`
+   - Handles the following tasks:
+     - Pulls latest code from GitHub
+     - Runs bench migrate and clears cache
+     - Restarts necessary ERPNext services
+     - Performs health checks
+     - Logs all actions to deploy.log
+     - Creates automatic backups before changes
+
+3. **Security**
+   - Passwordless automation using SSH keys
+   - Configured sudoers for necessary commands
+   - Secure handling of sensitive operations
+
+### 📝 Deployment Logs
+
+All deployment activities are logged to `~/frappe-bench/deploy.log` for monitoring and debugging purposes.
 
 ## Usage
 
