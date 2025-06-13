@@ -1,0 +1,30 @@
+name: Deploy to Masterpet Frappe Server
+
+on:
+  push:
+    branches:
+      - dev
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Deploy to server
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          # Deploy code
+          cd ~/frappe-bench/apps/petcare
+          git fetch origin
+          git checkout ${{ github.ref_name }}
+          git pull origin ${{ github.ref_name }}
+          
+          # Run migrations and restart
+          cd ~/frappe-bench
+          bench --site ${{ github.ref_name == 'main' && 'erp.masterpet.co.in' || 'dev.masterpet.co.in' }} migrate
+          bench restart 

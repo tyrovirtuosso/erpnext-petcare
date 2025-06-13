@@ -99,6 +99,30 @@ If you create or modify custom fields, Property Setters, or Doctypes in the dev 
     bench restart
     ```
 
+### Using `bench console` (Which Site?)
+
+By default, running:
+
+```bash
+bench console
+```
+will open the console for the site defined in sites/common_site_config.json
+
+To check which site you're in from inside the console:
+```bash
+frappe.local.site
+```
+This will return the active site name, like 'erp.masterpet.co.in' or 'dev.masterpet.co.in'.
+
+✅ Best Practice
+Always specify the site explicitly to avoid mistakes:
+
+```bash
+bench --site dev.masterpet.co.in console
+bench --site erp.masterpet.co.in console
+```
+
+
 ## Usage
 
 - Access pet care features from the ERPNext desk after installation.
