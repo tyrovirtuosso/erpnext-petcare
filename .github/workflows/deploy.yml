@@ -28,8 +28,11 @@ jobs:
           cd ~/frappe-bench
           bench --site ${{ github.ref_name == 'main' && 'erp.masterpet.co.in' || 'dev.masterpet.co.in' }} migrate
           
-          # Restart bench without supervisor
-          bench restart --force
+          # Restart services
+          bench restart
+          
+          # Clear cache
+          bench --site ${{ github.ref_name == 'main' && 'erp.masterpet.co.in' || 'dev.masterpet.co.in' }} clear-cache
           
           # Verify the site is up
           sleep 10
